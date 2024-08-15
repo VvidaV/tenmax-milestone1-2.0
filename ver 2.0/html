@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>三栏布局示例</title>
+    <style>
+        body {
+            display: flex;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        .sidebar {
+            width: 20%;
+            background-color: #f4f4f4;
+            padding: 15px;
+            box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+        }
+        .sidebar a {
+            display: block;
+            padding: 10px 0;
+            text-decoration: none;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .content {
+            width: 60%;
+            padding: 20px;
+        }
+        .content img {
+            max-width: 100%;
+            height: auto;
+        }
+        .advertisement {
+            width: 20%;
+            background-color: #ddd;
+            padding: 15px;
+            box-shadow: -2px 0 5px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 左侧导航栏 -->
+    <div class="sidebar">
+        <h3>导航</h3>
+        <a href="#section1">选项 1</a>
+        <a href="#section2">选项 2</a>
+        <a href="#section3">选项 3</a>
+        <a href="#section4">选项 4</a>
+    </div>
+
+    <!-- 中间内容区域 -->
+    <div class="content">
+        <h2>文章标题</h2>
+        <p>这里是文章内容。这是一个示例页面，你可以在这里展示你想要的内容和图片。</p>
+        <img src="https://via.placeholder.com/800x400" alt="示例图片">
+        <h3 id="section1">选项 1 的内容</h3>
+        <p>更多内容可以放在这里。</p>
+        <h3 id="section2">选项 2 的内容</h3>
+        <p>更多内容可以放在这里。</p>
+        <h3 id="section3">选项 3 的内容</h3>
+        <p>更多内容可以放在这里。</p>
+        <h3 id="section4">选项 4 的内容</h3>
+        <p>更多内容可以放在这里。</p>
+    </div>
+
+    <!-- 右侧广告栏 -->
+    <div class="advertisement">
+        <h3>广告区域</h3>
+        <p>这里可以放置广告内容。</p>
+        <img src="https://via.placeholder.com/200x300" alt="广告图片">
+    </div>
+
+</body>
+</html>
